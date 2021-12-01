@@ -15,6 +15,7 @@ const connect = function() {
     console.log("uwu you connected");
 
     conn.write("Name: UwU");
+
   });
   conn.on("data", (data) => {
 
@@ -22,11 +23,10 @@ const connect = function() {
 
   });
 
-
-
   return conn;
 };
 
 module.exports = {
   connect
 };
+
