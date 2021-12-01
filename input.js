@@ -8,9 +8,7 @@ const setupInput = function(conn) {
   stdin.setEncoding('utf8');
   stdin.resume();
   stdin.on('data', handleUserInput);
-
   return stdin;
-
 };
 const handleUserInput = function(data) {
 
@@ -33,5 +31,5 @@ const handleUserInput = function(data) {
 };
 
 module.exports = {
-  setupInput: setupInput
+  setupInput
 };
